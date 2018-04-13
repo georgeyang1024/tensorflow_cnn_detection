@@ -9,7 +9,10 @@ import cv2
 import cnnNet
 
 face_cascade = cv2.CascadeClassifier('/usr/local/Cellar/opencv/3.4.1_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml')
-font = ImageFont.truetype("JingDianXiYuanJian-1.ttf", 20, encoding="utf-8")
+font = ImageFont.truetype("fontc.ttf", 20, encoding="utf-8")
+#make ttf:
+#java -jar sfnttool.jar -s 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+-*/-_=男女高矮肥瘦偏标准美丑' QiHeiXiuChangBan_HeiBaiem_2.ttf fontc.ttf
+#图像上显示中文，生成只支持"男女高矮肥瘦偏标准美丑"这几个字的字体文件
 
 
 #数据集地址
